@@ -83,3 +83,11 @@ printCountry($copieMonaco);
 # Selon moi, une fonction peut être utilisé avec n'importe quel variable ou autre fonction
 # alors qu'une méthode peut être uniquement utilisé avec une Classe.
 
+# Question 9
+# Définition de :
+# - classe = Créateur d'élément du même type (de même base)
+# - instance = Objet utilisant une classe
+# - objet = Element créé comportant des caractéristiques
+# - méthode d'instance = Fonction permettant de modifier l'instance en paramètre
+# - constructeur = Créateur d'une classe
+
