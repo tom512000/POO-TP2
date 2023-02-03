@@ -89,5 +89,5 @@ printCountry($copieMonaco);
 # - instance = Objet utilisant une classe
 # - objet = Element créé comportant des caractéristiques
 # - méthode d'instance = Fonction permettant de modifier l'instance en paramètre
-# - constructeur = Créateur d'une classe
+# - constructeur = Créateur d'une instance de classe
 
