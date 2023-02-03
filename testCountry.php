@@ -75,5 +75,11 @@ function printCountry( Country $country ) : void
 {
     echo $country -> getName()."\n";
     echo "  surface : ".$country -> getSurface()."\n";
-    echo "  surface : ".$country -> getPopulation()."\n";
+    echo "  population : ".$country -> getPopulation()."\n";
 }
+printCountry($copieMonaco);
+
+# Question 8
+# Selon moi, une fonction peut être utilisé avec n'importe quel variable ou autre fonction
+# alors qu'une méthode peut être uniquement utilisé avec une Classe.
+
