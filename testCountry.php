@@ -46,9 +46,7 @@ $japon -> print();
 $copieFrance = new Country($france -> getName(), $france -> getSurface(), $france -> getPopulation());
 $france -> print();
 $copieFrance -> print();
-echo "Comparaison de Name : ".decodeBooleen($france -> getName() == $copieFrance -> getName())."\n";
-echo "Comparaison de Surface : ".decodeBooleen($france -> getSurface() == $copieFrance -> getSurface())."\n";
-echo "Comparaison de Population : ".decodeBooleen($france -> getPopulation() == $copieFrance -> getPopulation())."\n";
+echo "Comparaison : ".decodeBooleen($france -> isEqual($copieFrance))."\n";
 
 # Question 5
 # Utilisation des getteurs et setteurs avec l'instance $copieFrance :
