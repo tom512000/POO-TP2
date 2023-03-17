@@ -7,7 +7,7 @@ class Country {
     private int $population ;
 
 
-    public function __construct (string $name="Unknown", float $surface = 0, int $population=0) {
+    public function __construct (string $name="Unknown", float $surface = 0, int $population = 0) {
         $this->name = $name;
         $this->surface = $surface;
         $this->population = $population;
@@ -52,7 +52,7 @@ class Country {
 
     public function getDensity() : float{
         $density = 0;
-        if($this->surface > 0 && $this->surface > 0)
+        if($this->surface > 0 && $this->population > 0)
             $density = $this->population / $this->surface;
         return $density;
     }
