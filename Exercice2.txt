@@ -1,0 +1,11 @@
+Question 9
+
+- Classe : Un modèle ou un plan qui définit les caractéristiques et le comportement d'un groupe d'objets similaires.
+
+- Instance : Une représentation concrète d'une classe, créée en utilisant le modèle de la classe.
+
+- Objet : Une instance spécifique d'une classe avec des données et un état uniques.
+
+- Méthode d'instance : Un comportement ou une action associée à un objet spécifique d'une classe.
+
+- Constructeur : Une méthode spéciale appelée lors de la création d'une instance d'une classe, permettant d'initialiser ses propriétés et de préparer l'objet.
