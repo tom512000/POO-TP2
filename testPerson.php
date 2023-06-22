@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 require_once "Person.php";
 
 # Question 10
@@ -15,7 +17,7 @@ require_once "Person.php";
 
 # Question 11
 # $inconnu = new Person;
-# $inconnu -> print();
+# $inconnu->print();
 # La méthode print() ne fonctionne pas car les attributs n'ont pas été initialisé dans l'instance.
 # var_dump($inconnu);
 # Les 3 attributs ont pour valeur *uninitialized*, les attributs n'ont pas été initialisé dans l'instance et aucun constructeur le permet.
@@ -40,7 +42,8 @@ require_once "Person.php";
 # L'instruction n'est pas valide car elle n'initialise pas de valeur si les attributs de l'instance ne sont pas en paramètre.
 # Nous pouvons instancier un objet d'une seule façon, en ajoutant les 3 paramètres au constructeur.
 $tom = new Person('Sikora', 'Tom', 19);
-$tom -> print();
+$tom->print();
+echo "\n";
 # Les valeurs de ses attributs sont :
 # - lastName  -> 'Sikora'
 # - firstName -> 'Tom'
@@ -48,48 +51,55 @@ $tom -> print();
 
 # Question 14
 $jacques = new Person('Durand', 'Jacques');
-$jacques -> print();
+$jacques->print();
+echo "\n";
 
 # Question 15
 $inconnu = new Person;
-$inconnu -> print();
-# constructeur qui initialise les attributs `a "Doe", "John" et 0
+$inconnu->print();
+# constructeur qui initialise les attributs `a "Doe", "John" et 0.
 $jules = new Person("Durand");
-$jules -> print();
-# constructeur qui initialise les attributs `a "Durand", "John" et 0
+$jules->print();
+echo "\n";
+# constructeur qui initialise les attributs `a "Durand", "John" et 0.
 
 # Question 16
 # Le type de retour de la méthode d'instance getLastName est une chaine de caractères.
 # Cette méthode n'a aucun paramètres.
-$nomInconnu = $inconnu -> getLastName();
+$nomInconnu = $inconnu->getLastName();
 echo "$nomInconnu\n";
+echo "\n";
 # Elle n'autorise pas sa modification car cette méthode d'instance permet simplement de récupérer la valeur d'un objet et non de la modifier.
 
 # Question 17
-$prenomInconnu = $inconnu -> getFirstName();
+$prenomInconnu = $inconnu->getFirstName();
 echo "Prénom : $prenomInconnu\n";
-$ageInconnu = $inconnu -> getAge();
+$ageInconnu = $inconnu->getAge();
 echo "Age : $ageInconnu\n";
+echo "\n";
 
 # Question 18
-$copie = new Person($jacques -> getLastName(), $jacques -> getFirstName(), $jacques -> getAge());
-$copie -> print();
+$copie = new Person($jacques->getLastName(), $jacques->getFirstName(), $jacques->getAge());
+$copie->print();
+echo "\n";
 
 # Question 19
-echo "{$jacques->getAge()}\n";
+echo $jacques->getAge()."\n";
 $jacques->setAge(26);
-echo "{$jacques->getAge()}\n";
+echo $jacques->getAge()."\n";
+echo "\n";
 
 # Question 20
 # Modification de l'attribut lastName
-echo "{$jacques->getLastName()}\n";
+echo $jacques->getLastName()."\n";
 $jacques->setLastName('Raoult');
-echo "{$jacques->getLastName()}\n";
+echo $jacques->getLastName()."\n";
 # Modification de l'attribut firstName
-echo "{$jacques->getFirstName()}\n";
+echo $jacques->getFirstName()."\n";
 $jacques->setFirstName('Didier');
-echo "{$jacques->getFirstName()}\n";
+echo $jacques->getFirstName()."\n";
+echo "\n";
 
 # Question 21
-# Sans la méthode __toString, l'intruction ne renvoie rien car c'est une instance d'une classe qui ne peut pas être convertit en chaine de caracteres directement.
+# Sans la méthode __toString, l'intruction ne renvoie rien car elle correspond à une instance d'une classe qui ne peut pas être convertit en chaîne de caractères directement.
 echo "$jacques\n";
