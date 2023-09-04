@@ -11,7 +11,7 @@
 
 > Buts : découvrir et différencier les notions de classe et d’instance, utiliser une documentation, découvrir l’implémentation d’une classe, compléter l’implémentation d’une classe.
 >
-> [PDF - TP2](TP2_POO.pdf)
+> [PDF - TP2](files/TP2_POO.pdf)
 
 <br>
 
@@ -28,7 +28,7 @@
     <br>
     <br>
     <div>
-        <sub>&copy; 2023 Tom Sikora. Tous droits réservés.</sub>
+        <sub>Copyright &copy; 2023 Tom Sikora. Tous droits reservés.</sub>
     </div>
     <br>
     👨‍💻
